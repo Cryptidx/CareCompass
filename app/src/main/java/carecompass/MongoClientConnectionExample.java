@@ -9,9 +9,10 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+
 public class MongoClientConnectionExample {
     public static void main(String[] args) {
-        String connectionString = "mongodb+srv://username:<PASSWORD>@care.z7pjkp9.mongodb.net/?retryWrites=true&w=majority";
+        String connectionString = "mongodb+srv://limkaryna:GJ8FMBkVVQG7tPti@care.z7pjkp9.mongodb.net/?retryWrites=true&w=majority";
         ServerApi serverApi = ServerApi.builder()
                 .version(ServerApiVersion.V1)
                 .build();
