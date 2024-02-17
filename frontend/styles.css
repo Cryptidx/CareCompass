@@ -33,12 +33,37 @@ img {
   transform: translateX(-50%);
 }
 
-button,
-a {
-  display: block; /* Change the display to block */
-  margin: 0 auto; /* Center the buttons horizontally */
-  text-align: center; /* Center the text inside the buttons */
-  text-decoration: none; /* Remove underline from the link */
+/* button,
+a { */
+/* display: block; Change the display to block */
+/* margin: 0 auto; Center the buttons horizontally */
+/* text-align: center; Center the text inside the buttons */
+/* text-decoration: none; 
+  padding: 10px 20px;
+  background-color: #a99da4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-style: normal;
+} */
+
+.button {
+  display: inline-block; /* Display buttons and links inline */
+  padding: 10px 20px;
+  background-color: #a99da4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.button:hover {
+  background-color: #9a8c9a;
 }
 
 /* the font fanily */
@@ -77,7 +102,7 @@ a {
   margin-top: 50px;
 }
 
-button {
+/* button {
   padding: 10px 20px;
   background-color: #a99da4;
   color: white;
@@ -88,9 +113,9 @@ button {
   font-style: normal;
 }
 
-button:hover {
+button :hover {
   background-color: #9a8c9a;
-}
+} */
 
 /* -------Donate-------- */
 .donate {
@@ -98,4 +123,10 @@ button:hover {
   margin: auto;
   text-align: center;
   padding-top: 120%;
+}
+
+/* -----for the map------ */
+#map {
+  height: 400px;
+  width: 100%;
 }
