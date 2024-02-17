@@ -19,7 +19,7 @@ public class Donor {
 
         // Also the admin updates not the donor.
 
-        admin.update_shelter(item,quantity,shelter);
+        admin.update_shelter_donations(item,quantity,shelter);
         update_donate_score();
          // once you donate like 36 times so mod 36, you add 2 points to score
 
