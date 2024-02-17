@@ -9,10 +9,13 @@ public class Volunteer {
     public boolean Certified = false;
     public Volunteer_Community volunteerCommunity;
 
-    public Volunteer(String name, Volunteer_Community volunteerCommunity, float base_hours){
+    public Shelter shelter;
+
+    public Volunteer(String name, Volunteer_Community volunteerCommunity,Shelter shelter, float base_hours){
         this.name = name;
         this.volunteerCommunity = volunteerCommunity;
         this.base_hours = base_hours;
+        this.shelter = shelter;
     }
 
     public void clock_out(){

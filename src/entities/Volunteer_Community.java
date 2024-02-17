@@ -1,5 +1,7 @@
 package entities;
 
+import Adapters.Admin;
+
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -10,6 +12,8 @@ public class Volunteer_Community extends Centre{
     public Map<String, Shelter> shelters_worked_with;
 
     public String event;    // cleaning and soup kitchen. This centre does cleaning!
+
+    public Admin admin;
 
     // we should also put some shelters that they work with initially for the
     // event they provide services for
@@ -39,5 +43,6 @@ public class Volunteer_Community extends Centre{
     public void add_volunteer(Volunteer volunteer){
         Volunteers.put(volunteer.name,volunteer);
         this.spots_left -= 1;
+        admin.update_shelter_volunteer(volunteer.shelter,this.event);
     }
 }
