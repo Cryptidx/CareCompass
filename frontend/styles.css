@@ -1,0 +1,101 @@
+body {
+  /* the background of app */
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #f2e9e4;
+  text-align: center;
+}
+
+/* logo image */
+img {
+  max-width: 20%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.bottom-image {
+  position: fixed; /* Position the image absolutely */
+  width: auto;
+  bottom: 0; /* Align the image to the bottom of the container */
+  left: 50%; /* Align the image to the center horizontally */
+  transform: translateX(
+    -50%
+  ); /* Adjust for half of the image width to center it */
+}
+
+.bottom-logo {
+  max-width: 8%;
+  position: fixed;
+  bottom: 0;
+  left: 95%;
+  transform: translateX(-50%);
+}
+
+button,
+a {
+  display: block; /* Change the display to block */
+  margin: 0 auto; /* Center the buttons horizontally */
+  text-align: center; /* Center the text inside the buttons */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* the font fanily */
+.halant-light {
+  font-family: "Halant", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.halant-regular {
+  font-family: "Halant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.halant-medium {
+  font-family: "Halant", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.halant-semibold {
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.halant-bold {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #a99da4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #9a8c9a;
+}
+
+/* -------Donate-------- */
+.donate {
+  width: 80;
+  margin: auto;
+  text-align: center;
+  padding-top: 120%;
+}
