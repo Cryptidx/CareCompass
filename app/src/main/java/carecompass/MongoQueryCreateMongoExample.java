@@ -13,7 +13,7 @@ public class MongoQueryCreateMongoExample {
         MongoQuerying myQuerySchools = new MongoQuerying(connectionString, databaseName, collectionName);
         myQuerySchools.importDataFromExcel(excelFilePath);
 
-        myQuerySchools.updateMongoObject("65d14cab26088464a2ef87ad", "School Language", "English");
+        myQuerySchools.updateMongoObject("School Number", 918997, "School Language", "English");
 
         MongoQuerying myQueryShelters = new MongoQuerying(connectionString, databaseName, "shelters_in_toronto");
         myQueryShelters.importDataFromExcel("src/database/Shelter_mock_database.xlsx");

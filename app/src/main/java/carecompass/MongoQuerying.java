@@ -34,22 +34,22 @@ public class MongoQuerying {
         extractFromExcel(excelFilePath, connectionString, databaseName, collectionName);
     }
 
-    public void updateMongoObject(String id, String attribute, Object newValue) {
+    public void updateMongoObject(String identifierAttribute, Integer identifierValue, String attributeToUpdate, Object newValue) {
         try (MongoClient mongoClient = MongoClients.create(connectionString)) {
             MongoDatabase database = mongoClient.getDatabase(databaseName);
             MongoCollection<Document> collection = database.getCollection(collectionName);
 
-            // Define the filter based on the document's ID
-            Document filter = new Document("_id", new ObjectId(id));
+            // Define the filter based on the identifier attribute and its value
+            Document filter = new Document(identifierAttribute, identifierValue);
 
             // Define the update operation to set the new value for the specified attribute
-            Document update = new Document("$set", new Document(attribute, newValue));
+            Document update = new Document("$set", new Document(attributeToUpdate, newValue));
 
             // Update one document that matches the filter
             UpdateResult result = collection.updateOne(filter, update);
 
             if (result.getModifiedCount() > 0) {
-                System.out.println(attribute + " updated successfully.");
+                System.out.println(attributeToUpdate + " updated successfully.");
             } else {
                 System.out.println("No document found or updated.");
             }
@@ -57,6 +57,7 @@ public class MongoQuerying {
             e.printStackTrace();
         }
     }
+
 
 
 
