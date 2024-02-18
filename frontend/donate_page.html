@@ -13,8 +13,6 @@
     <title>Donate</title>
   </head>
   <body>
-    <h1>nearest places looking for donations:</h1>
-    <p>Here is some content for the new page.</p>
     <img
       src="flowerss-removebg-preview.png"
       alt="flowers"
@@ -28,7 +26,7 @@
   </body>
 
   <script src="script.js"></script>
-  <h1>Google Maps API</h1>
+  <!-- <h1>Google Maps API</h1> -->
 
   <div id="map"></div>
   <script>
@@ -67,12 +65,20 @@
         ? console.warn(p + " only loads once. Ignoring:", g)
         : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
     })({
-      key: "input api key",
+      key: "your api key",
       v: "weekly",
       // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
       // Add other bootstrap parameters as needed, using camel case.
     });
   </script>
-
+  <p>nearest places looking for donations:</p>
+  <a href="shelter_page.html" class="button" id="Cornerstone Place button"
+    >Cornerstone Place</a
+  >
+  <a href="shelter_2_page.html" class="button" id="Sagatay button">Sagatay</a>
+  <a href="shelter_2_page.html" class="button" id="Sagatay button"
+    >Christie Ossington Neighbourhood Centre</a
+  >
   <script src="app.js"></script>
 </html>
+<!--  -->

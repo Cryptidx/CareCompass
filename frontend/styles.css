@@ -15,6 +15,11 @@ img {
   margin: 0 auto; /* Center the image horizontally */
 }
 
+p {
+  text-align: left;
+  text-indent: 40px;
+}
+
 .bottom-image {
   position: fixed; /* Position the image absolutely */
   width: auto;
@@ -128,5 +133,6 @@ button :hover {
 /* -----for the map------ */
 #map {
   height: 400px;
-  width: 100%;
+  width: 70%;
+  margin: auto;
 }
